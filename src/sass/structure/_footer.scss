@@ -1,0 +1,122 @@
+/*------------------------------------
+   Footer
+------------------------------------*/
+
+.app-footer {
+    font-size: 15px;
+    background-color: #051A2E;
+    color: #fff;
+
+    p {
+        font-size: 15px;
+        color: #fff !important;
+        font-weight: 500;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+    }
+
+    .footer-widgets {
+        padding: ($space) 0 $space/2;
+
+        .widget {
+            .widget-title {
+                color: $primary;
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+
+            .widget-body {
+                overflow: hidden;
+                position: relative;
+
+                .links {
+                    li {
+                        font-size: 16px;
+                        margin-bottom: 26px;
+                    }
+                }
+
+                .articles {
+                    > div {
+                        height: 70px;
+                        position: relative;
+                        overflow: hidden;
+                        padding-left: 120px;
+                        margin-bottom: 20px;
+
+                        p {
+                            font-weight: 700;
+                            overflow: hidden;
+                            max-height: 45px;
+                            margin-bottom: 3px;
+                        }
+
+                        span {
+                            font-size: 12px;
+                            font-weight: 300;
+                        }
+
+                        .image {
+                            top: 0;
+                            left: 0;
+                            width: 90px;
+                            height: 67px;
+                            border-radius: 6px;
+                            position: absolute;
+                        }
+                    }
+                }
+
+            }
+
+            &.widget-info {
+
+                h2 {
+                    color: $primary;
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    display: block;
+                    margin-bottom: 12px;
+                    color: hsla(0, 0%, 100%, .5) !important;
+                }
+
+            }
+        }
+    }
+
+    .footer-copyright {
+        .line {
+            display: block;
+            height: 1px;
+            background: #d1d1d1;
+
+            margin-bottom: 16px;
+        }
+        padding-bottom: 30px;
+        p {
+            text-align: center;
+            margin: 0;
+        }
+
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .widget {
+        margin-bottom: 30px;
+    }
+}
