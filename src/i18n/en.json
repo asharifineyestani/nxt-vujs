@@ -1,0 +1,22 @@
+{
+  "menu": {
+    "home": "Home",
+    "employers": "Employers",
+    "candidates": "Candidates",
+    "blog": "Blog",
+    "job": "Job",
+    "appliedJob": "Applied Job",
+    "changePassword": "Change Password",
+    "cv": "Cover Latter",
+    "jobAlerts": "Job Alerts",
+    "myResume": "My Resume",
+    "myProfile": "My Profile",
+    "shortlistedJob": "Shortlisted Job",
+    "logout": "Logout",
+    "companyProfile": "Company Profile",
+    "manageJob": "Manage Job",
+    "transactions": "Transactions",
+    "packages": "Packages",
+    "postNewJob": "Post New Job"
+  }
+}
