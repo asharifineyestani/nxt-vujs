@@ -17,11 +17,11 @@ export default new Router({
     ...demoRoutes,
     {
       path: '/',
-      redirect: {path: '/pages/welcome'},
+      redirect: {path: '/welcome'},
     },
     {
       path: '*',
-      redirect: {path: '/pages/welcome'},
+      redirect: {path: '/welcome'},
     },
     {
       name: 'public',
@@ -35,8 +35,28 @@ export default new Router({
           children: [
             {
               name: 'welcome',
-              path: 'welcome',
+              path: '/welcome',
               component: () => import('../views/scenes/Welcome'),
+            },
+            {
+              name: 'about',
+              path: '/about-us',
+              component: () => import('../views/scenes/About'),
+            },
+            {
+              name: 'service',
+              path: '/service',
+              component: () => import('../views/scenes/Service'),
+            },
+            {
+              name: 'blog',
+              path: '/blog',
+              component: () => import('../views/scenes/Blog'),
+            },
+            {
+              name: 'contact',
+              path: '/contact',
+              component: () => import('../views/scenes/Contact'),
             },
           ],
         },

@@ -3,8 +3,10 @@
     @toggleSidebar="toggleSidebar"
     :mobileWidth="mobileWidth"
   >
-    <app-navbar
+    <app-topbar
+      slot="topbar"
       :minimized.sync="minimized"
+      :logo = "Next"
     />
     <main
       slot="content"
@@ -13,19 +15,26 @@
     >
       <router-view/>
     </main>
+
+    <app-footer
+      slot="footer"
+    />
   </va-page-layout>
 </template>
 
 <script>
   import VaPageLayout from './VaPageLayout'
-  import AppNavbar from './partials/topbar/AppNavbar'
+  import AppTopbar from './partials/topbar/AppTopbar'
+  import AppFooter from './partials/footer/AppFooter'
   import {mapGetters} from 'vuex'
 
   export default {
     name: 'app-layout',
     components: {
       VaPageLayout,
-      AppNavbar,
+      AppTopbar,
+      AppFooter
+
     },
     data() {
       return {
