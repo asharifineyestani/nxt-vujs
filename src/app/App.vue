@@ -5,19 +5,21 @@
 </template>
 
 <script>
-export default {
-  name: 'app',
-}
+  export default {
+    name: 'app',
+  }
 </script>
 
 <style lang="scss">
-@import "../sass/main.scss";
+  @import 'node_modules/bootstrap/scss/bootstrap';
+  @import 'node_modules/bootstrap-vue/src/index.scss';
+  @import "../sass/main.scss";
 
-body {
-  height: 100%;
-
-  #app {
+  body {
     height: 100%;
+
+    #app {
+      height: 100%;
+    }
   }
-}
 </style>
