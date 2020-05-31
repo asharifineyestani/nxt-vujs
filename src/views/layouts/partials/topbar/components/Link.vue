@@ -14,7 +14,7 @@
 <script>
 
   export default {
-    name: 'sh4-sidebar-link',
+    name: 'link',
     components: {  },
     props: {
       to: {

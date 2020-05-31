@@ -13,7 +13,7 @@
 
 
 export default {
-  name: 'sh4-sidebar-link-group',
+  name: 'link-group',
   props: {
     icon: [String, Array],
     title: String,

@@ -5,7 +5,7 @@ export const navigationRoutes = {
   },
   routes: [
     {
-      name: 'public.scenes.welcome',
+      name: 'public.welcome',
       path: '/welcome',
       displayName: 'menu.home',
       meta: {
@@ -13,9 +13,28 @@ export const navigationRoutes = {
       },
     },
     {
-      name: 'public.scenes.employers',
-      path: '/pages/blog',
-      displayName: 'menu.employers',
+      name: 'public.about',
+      path: '/about-us',
+      displayName: 'menu.about',
+      meta: {
+        iconClass: 'afra-iconset-tables',
+      },
+    },
+
+    {
+      name: 'public.service',
+      path: '/service',
+      displayName: 'menu.service',
+      meta: {
+        iconClass: 'afra-iconset-ui-elements',
+      },
+      disabled: true,
+    },
+
+    {
+      name: 'public.blog',
+      path: '/blog',
+      displayName: 'menu.blog',
       meta: {
         iconClass: 'afra-iconset-statistics',
       },
@@ -23,33 +42,13 @@ export const navigationRoutes = {
 
     },
     {
-      name: 'public.scenes.candidates',
-      path: '/scenes/contact-us',
-      displayName: 'menu.candidates',
+      name: 'public.contact',
+      path: '/contact-us',
+      displayName: 'menu.contact',
       meta: {
         iconClass: 'afra-iconset-forms',
       },
       disabled: true,
-
-    },
-    {
-      name: 'public.scenes.blogs',
-      path: '/scenes/about-us',
-      displayName: 'menu.blog',
-      meta: {
-        iconClass: 'afra-iconset-tables',
-      },
-
-    },
-    {
-      name: 'public.scenes.jobs',
-      path: '/scenes/jobs',
-      displayName: 'menu.job',
-      meta: {
-        iconClass: 'afra-iconset-ui-elements',
-      },
-      disabled: true,
-
     },
   ],
 }

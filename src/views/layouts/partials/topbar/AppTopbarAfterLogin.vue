@@ -7,8 +7,8 @@
 
 <script>
   import {navigationRoutes} from './NavigationRoutes'
-  import Sh4SidebarLink from './components/Sh4TopbarLink'
-  import Sh4SidebarLinkGroup from './components/Sh4TopbarLinkGroup'
+  import Sh4SidebarLink from './components/Link'
+  import Sh4SidebarLinkGroup from './components/LinkGroup'
 
   export default {
     name: 'app-navbar',
