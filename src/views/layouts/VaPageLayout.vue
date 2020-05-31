@@ -1,6 +1,11 @@
 <template>
   <div class="theme-layout" id="scrollup">
-    <slot name="topbar"></slot>
+        <slot name="topbar"></slot>
+
+
+
+
+
     <div class="content-wrap" id="content-wrap">
       <slot name="content"></slot>
     </div>

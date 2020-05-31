@@ -1,5 +1,5 @@
 <template>
-  <li class="menu-item">
+  <b-nav-item href="#" class="menu-item">
     <router-link
       active-class="va-sidebar-link--active"
       :to="to"
@@ -8,7 +8,7 @@
       <slot name="title"/>
       {{title}}
     </router-link>
-  </li>
+  </b-nav-item>
 </template>
 
 <script>

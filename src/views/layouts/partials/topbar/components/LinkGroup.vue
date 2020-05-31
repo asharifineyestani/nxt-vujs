@@ -1,12 +1,7 @@
 <template>
-  <li class="menu-item-has-children">
-    <a href="#" >
-      {{title}}
-    </a>
-    <ul>
-      <slot/>
-    </ul>
-  </li>
+  <b-nav-item-dropdown :text="title" right class="menu-item-has-children">
+    <slot/>
+  </b-nav-item-dropdown>
 </template>
 
 <script>

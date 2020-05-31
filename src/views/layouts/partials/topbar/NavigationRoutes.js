@@ -29,6 +29,18 @@ export const navigationRoutes = {
         iconClass: 'afra-iconset-ui-elements',
       },
       disabled: true,
+
+      children: [
+        {
+          name: 'charts',
+          displayName: 'menu.charts',
+        },
+        {
+          name: 'progress-bars',
+          displayName: 'menu.progressBars',
+        },
+      ],
+
     },
 
     {
