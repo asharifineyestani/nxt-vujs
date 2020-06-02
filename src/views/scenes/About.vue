@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>About</h1>
+    <Heading :items="heading" />
   </div>
 </template>
 
@@ -8,11 +8,19 @@
 
   import Section1 from '../sections/Section1'
   import Section2 from '../sections/Section2'
+  import Heading from "../components/Heading";
 
   export default {
-    name: 'welcome',
+    name: 'AboutUs',
     data () {
       return {
+        heading: {
+          h1: "H1 Sample",
+          subTitle : "sub title",
+          title : "title",
+          label : "label",
+          position : "center",
+        },
         items: [
           {
             imageUrl: 'https://i.imgur.com/GzUR0Wz.png',
@@ -39,6 +47,7 @@
     },
 
     components: {
+      Heading,
       Section1,
       Section2
     },
